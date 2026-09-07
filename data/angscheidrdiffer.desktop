@@ -1,0 +1,13 @@
+[Desktop Entry]
+Type=Application
+Name=AnGscheidrDiffer
+GenericName=Diff and Merge Tool
+GenericName[de]=Vergleichs- und Zusammenführungswerkzeug
+Comment=Compare and merge two text files side by side
+Comment[de]=Zwei Textdateien nebeneinander vergleichen und zusammenführen
+Exec=angscheidrdiffer %F
+Icon=angscheidrdiffer
+Terminal=false
+Categories=Qt;Development;
+MimeType=text/plain;
+StartupNotify=true

@@ -1,0 +1,27 @@
+[Desktop Entry]
+Type=Service
+X-KDE-ServiceTypes=KonqPopupMenu/Plugin
+MimeType=all/allfiles;inode/directory;
+Actions=compareTwo;selectForCompare;compareWithSelected;
+X-KDE-StartupNotify=false
+
+[Desktop Action compareTwo]
+Name=Compare with AnGscheidrDiffer
+Name[de]=Mit AnGscheidrDiffer vergleichen
+Icon=angscheidrdiffer
+Exec=angscheidrdiffer %F
+X-KDE-RequiredNumberOfUrls=2
+
+[Desktop Action selectForCompare]
+Name=Select for Compare
+Name[de]=Für Vergleich merken
+Icon=edit-copy
+Exec=angscheidrdiffer --select-for-compare %f
+X-KDE-RequiredNumberOfUrls=1
+
+[Desktop Action compareWithSelected]
+Name=Compare with Selected File
+Name[de]=Mit gemerkter Datei vergleichen
+Icon=angscheidrdiffer
+Exec=angscheidrdiffer --compare-with %f
+X-KDE-RequiredNumberOfUrls=1

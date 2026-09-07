@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<component type="desktop-application">
+  <id>de.unifyzer.angscheidrdiffer</id>
+  <metadata_license>MIT</metadata_license>
+  <project_license>MIT</project_license>
+  <name>AnGscheidrDiffer</name>
+  <summary>Side-by-side diff and merge tool</summary>
+  <summary xml:lang="de">Vergleichs- und Zusammenführungswerkzeug</summary>
+
+  <developer id="de.unifyzer">
+    <name>formic</name>
+  </developer>
+
+  <launchable type="desktop-id">angscheidrdiffer.desktop</launchable>
+
+  <url type="homepage">https://github.com/form1c/angscheidrdiffer</url>
+  <url type="bugtracker">https://github.com/form1c/angscheidrdiffer/issues</url>
+
+  <description>
+    <p>
+      AnGscheidrDiffer compares two files side by side and merges between them.
+      Both sides stay editable while the comparison is running, changes are
+      recomputed as you type, and a merge in either direction is a single undo
+      step.
+    </p>
+    <p xml:lang="de">
+      AnGscheidrDiffer vergleicht zwei Dateien nebeneinander und führt sie
+      zusammen. Beide Seiten bleiben während des Vergleichs bearbeitbar, die
+      Unterschiede werden beim Tippen neu berechnet, und eine Übernahme in
+      beide Richtungen ist ein einzelner Rückgängig-Schritt.
+    </p>
+    <p>Features:</p>
+    <ul>
+      <li>Merge selected lines, the current section or the whole file</li>
+      <li>Recursive folder comparison with copy and delete between the sides</li>
+      <li>Three-way merge for conflicts with a common ancestor</li>
+      <li>Ignore whitespace, line endings, comments, letter case or the first N lines</li>
+      <li>Command line mode with exit codes suitable for scripts</li>
+    </ul>
+  </description>
+
+  <categories>
+    <category>Development</category>
+    <category>Utility</category>
+  </categories>
+
+  <keywords>
+    <keyword>diff</keyword>
+    <keyword>merge</keyword>
+    <keyword>compare</keyword>
+  </keywords>
+
+  <provides>
+    <binary>angscheidrdiffer</binary>
+  </provides>
+
+  <content_rating type="oars-1.1"/>
+
+  <releases>
+    <release version="1.0.0" date="2026-09-07"/>
+  </releases>
+</component>

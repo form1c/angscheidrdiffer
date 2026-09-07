@@ -1,0 +1,56 @@
+# This directory is the repository. Everything private lives one level up in
+# the working folder and is therefore out of reach without any exclude rule.
+#
+# What is excluded here is only what the development machine produces:
+# build products, tool files and leftovers.
+
+# --- Build products, as described in doc/installation.md section 8 ---
+build/
+build-deb/
+release/
+
+# Building inside the source tree instead of build/ scatters these files
+# across the root. It is not the intended way, but without these rules it
+# would cost a spoiled commit.
+CMakeCache.txt
+CMakeFiles/
+cmake_install.cmake
+CTestTestfile.cmake
+Makefile
+*_autogen/
+Testing/
+compile_commands.json
+install_manifest.txt
+
+# --- Build artefacts ---
+*.o
+*.a
+*.so
+*.so.*
+moc_*.cpp
+qrc_*.cpp
+ui_*.h
+
+# --- Editors and development environments ---
+.idea/
+.vscode/
+.kdev4/
+*.kdev4
+*.pro.user
+*.swp
+*.swo
+*~
+.cache/
+.clangd/
+
+# --- Operating systems ---
+.DS_Store
+Thumbs.db
+.directory
+
+# --- Leftovers of various tools ---
+*.bak
+*.orig
+*.rej
+core
+core.*
